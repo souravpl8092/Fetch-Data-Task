@@ -1,0 +1,140 @@
+/* Heading page*/
+.heading-box {
+  margin-top: -1%;
+  width: 100%;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.heading {
+  font-family: cursive;
+  font-size: 35px;
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(239, 197, 101);
+}
+
+/* CartoonDisplay page */
+.main-box {
+  font-family: cursive;
+}
+
+.message {
+  font-size: 28px;
+  color: red;
+  text-align: center;
+  min-height: 540px;
+}
+
+.character-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 4%;
+  margin: auto;
+  width: 88%;
+  height: 100vh;
+  padding: 2%;
+}
+
+/*  CartoonCard page */
+.card-main-box {
+  padding-bottom: 10%;
+}
+
+.card-box {
+  margin: auto;
+  text-align: center;
+  padding: 4%;
+  border-radius: 10px;
+  background: rgba(255, 191, 225, 1);
+  background: linear-gradient(180deg, rgb(254, 216, 213), rgb(254, 252, 191));
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.card-image {
+  width: 85%;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.card-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Pagination page */
+.page-box {
+  display: flex;
+  width: 15%;
+  margin: 2% auto;
+  gap: 2%;
+  justify-content: center;
+}
+
+.page-button {
+  background: black;
+  color: white;
+  font-size: 16px;
+  font-family: cursive;
+  border-radius: 8px;
+  padding: 10px 18px;
+  margin: auto;
+}
+
+/* Loading page */
+.loading-box {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  border: 15px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 15px solid #2449cf;
+  animation: spinner 2s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsiveness for medium screen*/
+@media all and (min-width: 481px) and (max-width: 768px) {
+  .character-box {
+    grid-template-columns: repeat(3, 1fr);
+    width: 95%;
+  }
+  .page-box {
+    width: 25%;
+    padding-bottom: 2%;
+  }
+  .heading-box {
+    margin-top: -2%;
+  }
+}
+
+/* Responsiveness for small screen*/
+@media all and (min-width: 320px) and (max-width: 480px) {
+  .character-box {
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+  }
+  .page-box {
+    width: 40%;
+    padding-bottom: 2%;
+  }
+  .heading-box {
+    margin-top: -4%;
+  }
+}
