@@ -102,7 +102,9 @@
     │
     ├── Pages
     │   └── CartoonDisplay.js
+    ├── App.css
     ├── App.js
+    ├── index.css
     └── index.js
 
 
